@@ -24,9 +24,7 @@ before_script:
     - go get -u -v github.com/spf13/hugo
 
 script:
-    - git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git ./themes/hugo-icarus-theme
     - hugo
 
 after_success:
-    - echo "remi-parain.github.io" > ./public/CNAME
     - ./scripts/deploy.sh
