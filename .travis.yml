@@ -19,6 +19,7 @@ before_script:
     - go get -u -v github.com/spf13/hugo
 
 script:
+    - git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git ./themes/hugo-tranquilpeak-theme
     - hugo
 
 after_success:
